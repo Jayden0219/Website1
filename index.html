@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" scroll-behavior="smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTMLTutor</title>
+<link rel="icon" type="image/x-icon" href="Logo.png" alt="Logo">
+<link rel="stylesheet" href="Styles.css">
+</head>
+
+<nav>
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">x</a>
+        <div class="glow"><a href="404.html">About<span class="ribbon glow">NEW</span></a></div><br>
+        <div class="glow"><a href="404.html">Services<span class="ribbon glow">NEW</span></a></div><br>
+        <div class="glow"><a href="404.html">Clients<span class="ribbon glow">NEW</span></a></div><br>
+        <div class="glow"><a href="404.html">Contact<span class="ribbon glow">NEW</span></a></div>
+      </div>
+
+<div id="topnav">
+  <div class="topnav">
+      <button class="openbtn topnavimg " onclick="openNav()"><img src="Logo.png" title="Logo" alt="Logo" height="41.4" style="background-color: #00ABE4;"></button>
+    <a href="index.html" class="pointer active " style="color:black;">Home</a>
+    <a href="HomePage.html">Learn</a>
+    <a href="404.html" >Contact</a>
+    <div class="dropdown">
+      <button class="dropbox";>Account▾</button>
+      <div class="dropped">
+        <a href="index.html">Notification
+          <span class="badge">1</span>
+        </a>
+        <a href="404.html">Setting</a>
+        <a onclick="document.getElementById('id02').style.display='block'" class="pointer">Sign In</a>
+        <a onclick="document.getElementById('id01').style.display='block'" class="pointer">Log In</a>
+      </div>  
+    </div>
+    <a href="404.html" class="split topspan">Help</a>
+  </div>
+</div>
+</nav>
+
+
+<button class="upper" onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+<body>
+<div class="right">
+    <div class="warning">
+      <span class="closebtn">&#10004;</span>  
+      <strong>Warning!</strong> You might miss out on a huge sale! <i><b><u>50% OFF</u></b></i>
+    </div>
+
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="log in.webp" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" required><br>
+    
+          <br><label for="psw"><b>Password</b></label>
+          <input type="password" id="myInput" placeholder="Enter Password" required>
+          <input type="checkbox" onclick="myFunction()">Show Password<br><br>
+            
+          <br><button type="submit" class="buttons" type="button" style.display='none'>Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn buttons">Cancel</button>
+          <span class="psw">Forgot <a onclick="document.getElementsById('id02')">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <div id="id02" class="modal">
+  
+      <form class="modal-content animate" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="log in.webp" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" required><br>
+          <br><label for="psw"><b>Password</b></label>
+          <input type="text" placeholder="Enter Password" required><br>
+          <br><label for="psw"><b>Repeat Password</b></label>
+          <input type="text" placeholder="Repeat Password" required>
+          <br><button type="submit" class="buttons" style.display='none'>Sign In</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn buttons">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <h2>Page Content</h2>
+  <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some text..</p>
+  <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+  <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some text..</p>
+  <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+  <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some text..</p>
+  <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+  <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some text..</p>
+  <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+  <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some text..</p>
+
+<script>
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+        
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function(){ div.style.display = "none"; }, 0);
+          }
+        }
+        
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<footer>
+<p></p>
+</footer>
+</body>
+</html>

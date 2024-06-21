@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" scroll-behavior: smooth;>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTMLTutor</title>
+<link rel="icon" type="image/x-icon" href="Logo.png">
+<link rel="stylesheet" href="Styles.css">
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bgimg {
+    width: auto;
+    background-image: url('summer.avif');
+    height: 85%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+    font-family: "Courier New";
+    font-size: 50px;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    color: transparent;  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+  }
+  
+  hr {
+    border: 3px solid black;
+    border-radius: 5px;  }
+  </style>
+</head>
+
+<nav>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="close" onclick="closeNav()">x</a>
+    <div class="glow"><a href="404.html">About<span class="ribbon glow">NEW</span></a></div><br>
+    <div class="glow"><a href="404.html">Services<span class="ribbon glow">NEW</span></a></div><br>
+    <div class="glow"><a href="404.html">Clients<span class="ribbon glow">NEW</span></a></div><br>
+    <div class="glow"><a href="404.html">Contact<span class="ribbon glow">NEW</span></a></div>
+  </div>
+  <div id="topnav">
+    <div class="topnav">
+        <button class="openbtn topnavimg " onclick="openNav()"><img src="Logo.png" title="Logo" alt="Logo" height="41.4" style="background-color: #00ABE4;"></button>
+      <a href="index.html">Home</a>
+      <a href="HomePage.html" class="pointer active" style="color:black;">Learn</a>
+      <a href="404.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbox split">Account▾</button>
+        <div class="dropped">
+          <a href="index.html">Notification</a>
+          <a href="404.html">Setting</a>
+          <a onclick="document.getElementById('id02').style.display='block'" class="pointer">Sign In</a>
+          <a onclick="document.getElementById('id01').style.display='block'" class="pointer">Log In</a>
+        </div>
+      </div> 
+      <a href="404.html" class="split">Help</a>
+    </div>
+  </div>
+  </nav>
+
+<body>
+
+<div class="bgimg">
+  <div class="middle">
+    <h1><b>COMING SOON: SUMMER BREAK!</b></h1>
+    <hr>
+    <p id="countdown"></p>
+  </div>
+  <div class="bottomleft">
+    <p>.</p>
+  </div>
+</div>
+</body>
+
+<footer>
+  <p><p>
+  </footer>
+
+<script>
+var countDownDate = new Date("June 21, 2024 15:05:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "YAY";
+  }
+}, 1000);
+</script>
+
+</html> 
